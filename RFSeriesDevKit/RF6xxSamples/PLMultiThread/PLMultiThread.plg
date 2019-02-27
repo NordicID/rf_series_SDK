@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PLMultiThread - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP97.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/PLMultiThread.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\RF_Family\PC_Apps\Tools\PLMultiThread\DataProcessing.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP97.tmp" 
+Creating temporary file "C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP98.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/PLMultiThread.pdb" /machine:I386 /out:"Release/PLMultiThread.exe" 
+.\Release\BSConnections.obj
+.\Release\DataProcessing.obj
+.\Release\PLMultiThread.obj
+.\Release\PLMultiThreadDlg.obj
+.\Release\plserver.obj
+.\Release\StdAfx.obj
+.\Release\YLEIS.OBJ
+.\Release\PLMultiThread.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP98.tmp"
+<h3>Output Window</h3>
+Compiling...
+DataProcessing.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+PLMultiThread.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

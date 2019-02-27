@@ -1,0 +1,51 @@
+Format of appList.txt
+---------------------------------------------------------------------
+[APPLICATIONS:<App_1_name>:<App_2_name>:<App_3_name>:<App_4_name>...]
+**App_x_name must be same than name when creating connection in connList.txt
+**Up to 6 applications can be routed.
+**Application names are printed in the main menu where the user can select.
+**Example:
+
+APPLICATIONS:PLAPP:FAST_INVENTORY **Available applications
+
+---------------------------------------------------------------------
+[HS_ID:<ID nro>:<App number>]
+
+**Hand terminal ID which only have access to the system.
+**If no HS_ID entries, all HS have access to all applications.
+**App number specifies access right to available applications
+**Example:
+
+HS_ID:12345:1	**This HS can only use app1 (PLAPP)
+HS_ID:44444:12	**This HS can use app1 and app2 (PLAPP and FAST_INVENTORY)
+HS_ID:23022:2	**This HS can use only app2 (FAST_INVENTORY)
+
+------------------------------------------------------------------------
+[MAIN_MENU_STRING:<"STRING">]
+
+**When RF6xxAppRouter receives this string, the main menu of the applications will be opened.
+**<STRING> can be any which comes from hand termnal as a plain string.
+**If the HS user presses "F10"-key it just sends "F10" string to the host.
+**If the HS user sends text in the initial field, it can be use also to open main menu.
+
+**Example:
+
+MAIN_MENU_STRING:F10	**When HS user sends F10, the main menu will be opened
+------------------------------------------------------------------------
+MAIN_MENU_HEADER:<"Header string">
+
+*This string will be displayed in the main menu form as a header text.
+(Max 20 char)
+
+**Example:
+
+MAIN_MENU_HEADER:* RF600 Demos *
+-----------------------------------------------------------------------
+HOST_DOWN_TEXT:<"Host down text">
+
+**Example:
+
+HOST_DOWN_TEXT:     Host down!       Try again later
+
+*Host down text will be printed as a Popmessage in the HS screen when connection to the specific host has been lost.
+-------------------------------------------------------------------------

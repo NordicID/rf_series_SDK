@@ -1,0 +1,45 @@
+Format of connList.txt
+
+--------------------------------------------------------
+**Serial Port Connection:
+
+[COM:<port number>:channel(optional)]
+**Example:
+
+COM:1	**Opens COM1
+
+COM:1:5 **Opens COM1 and set base station channel to 5
+--------------------------------------------------------
+**Start server. Listens client TCP/IP connections to specific port
+
+[SERVER:<port to listen>
+
+**Example:
+SERVER:1200
+--------------------------------------------------------
+**Create TCP/IP connection to the specific address and port. Channel value is optional
+
+[CLIENT:<tcp/ip addr or name:port:channel(optional)]
+
+**Example:
+
+**Connect to 194.100.186.39 and port 2101 and set base station channel to 5
+CLIENT:194.100.186.39:2101:5
+
+** Connect to 194.100.186.40 port 7001 No channel changes
+CLIENT:194.100.186.40:7001
+---------------------------------------------------------
+**HOST application connections
+
+HOST:<tcp/ip addr or name:port:<App name>
+
+**NOTE: App name must be same than specified in appList.txt APPLICATIONS section
+
+**Example:
+
+HOST:127.0.0.1:500:PLAPP
+HOST:DemoPC:1100:FAST_INVENTORY
+----------------------------------------------------------
+
+
+

@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PLApp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40b /fo".\Release/PLApp.res" /d "NDEBUG" /d "_AFXDLL" "C:\RF_Family\PC_Apps\Samples\VC\PLApp21\PLApp.rc"" 
+Creating temporary file "C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/PLApp.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\MainFrm.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\PLApp.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\PLAppDoc.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\PLAppView.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\plserver.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\PrdDlg.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\Yleis.cpp"
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\StartServerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1A.tmp" 
+Creating temporary file "C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/PLApp.pch" /Yc"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"C:\RF_Family\PC_Apps\Samples\VC\PLApp21\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1B.tmp" 
+Creating temporary file "C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:".\Release/PLApp.pdb" /machine:I386 /out:".\Release/PLApp.exe" 
+.\Release\MainFrm.obj
+.\Release\PLApp.obj
+.\Release\PLAppDoc.obj
+.\Release\PLAppView.obj
+.\Release\plserver.obj
+.\Release\PrdDlg.obj
+.\Release\StdAfx.obj
+.\Release\Yleis.obj
+.\Release\PLApp.res
+.\Release\StartServerDlg.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ARI_PO~1.NOR\LOCALS~1\Temp\RSP1B1C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+PLApp.cpp
+PLAppDoc.cpp
+PLAppView.cpp
+plserver.cpp
+PrdDlg.cpp
+Yleis.cpp
+StartServerDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+PLApp.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
